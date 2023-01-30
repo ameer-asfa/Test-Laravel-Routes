@@ -69,7 +69,7 @@ Route::middleware('auth')->group(function () {
         Route::resource('task', TaskController::class);
 
     // End of the /app Route Group
-    },
+    });
 
 
     // Task 9: /admin group within a group
@@ -93,10 +93,10 @@ Route::middleware('auth')->group(function () {
 
 
     // End of the /admin Route Group}
-    })
+    });
 
 // End of the main Authenticated Route Group
-}
+});
 
 // One more task is in routes/api.php
 
